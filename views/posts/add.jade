@@ -1,0 +1,11 @@
+form(action= '/posts', method= 'post')
+  p
+    label Title
+    br/
+    input(type= 'text', name= 'title', size= '60')
+  p
+    label Body
+    br/
+    textarea(name= 'body', cols= '90', rows= '20')
+  p
+    input(type= 'submit', value= 'Create post')

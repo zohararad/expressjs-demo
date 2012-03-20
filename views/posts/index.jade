@@ -1,0 +1,13 @@
+h1 Posts
+
+p
+  a(href= '/posts/add', title= 'new post') New Post
+
+- if (posts.length)
+  ul
+  each post in posts
+    li
+      h3
+       a(href= "/posts/#{post.id}", title= #{post.title})= post.title
+      p=  post.body
+      h6= post.date
